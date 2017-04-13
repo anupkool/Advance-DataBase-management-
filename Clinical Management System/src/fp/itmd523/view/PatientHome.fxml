@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fp.itmd523.controller.PatientHomeController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <Text layoutX="293.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome User" />
+            <MenuBar layoutX="158.0" layoutY="182.0" prefHeight="32.0" prefWidth="384.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Profile">
+                     <items>
+                        <MenuItem fx:id="menuViewInfo" mnemonicParsing="false" onAction="#ViewPatientInfo" text="View Profile" />
+                        <MenuItem mnemonicParsing="false" onAction="#UpdatePatientInfo" text="Update Profile" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Appointments">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#gotoSearchAppointment" text="Search / Book Appointment" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewBookedAppointments" text="Show Booked Appointment" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View History">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#viewHistory" text="View History" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Log Out">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#gotoLogin" text="Log Out" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="104.0" fitWidth="385.0" layoutX="201.0" layoutY="28.0">
+         <image>
+            <Image url="@clinic_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="137.0" layoutX="38.0" layoutY="16.0">
+         <image>
+            <Image url="@clinic_logo2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

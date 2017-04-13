@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fp.itmd523.controller.DoctorHomeController">
+   <children>
+      <Text layoutX="294.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Doctor" />
+      <MenuBar layoutX="241.0" layoutY="172.0" prefHeight="32.0" prefWidth="217.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Search Patient">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#gotoDoctorSearchPatient" text="Search Patient" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Log Out">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#gotoLogin" text="Log Out" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="104.0" fitWidth="385.0" layoutX="184.0" layoutY="28.0">
+         <image>
+            <Image url="@clinic_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="137.0" layoutX="38.0" layoutY="16.0">
+         <image>
+            <Image url="@clinic_logo2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

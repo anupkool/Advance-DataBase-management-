@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fp.itmd523.controller.BaseDoctorController">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="8.0" prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <Text layoutX="295.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Doctor" />
+            <Text layoutX="40.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" />
+            <Text layoutX="40.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+            <Text layoutX="40.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" />
+            <Text layoutX="40.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth:" />
+            <Text layoutX="38.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Id:" />
+            <Text layoutX="39.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number:" />
+            <Text layoutX="40.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Group:" />
+            <Text layoutX="40.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight:" />
+            <Button layoutX="374.0" layoutY="626.0" mnemonicParsing="false" onAction="#backtoDoctorSearchPatient" text="Back" />
+            <Label fx:id="lbl_fname" layoutX="164.0" layoutY="246.0" prefHeight="21.0" prefWidth="149.0" />
+            <Label fx:id="lbl_lname" layoutX="164.0" layoutY="279.0" prefHeight="21.0" prefWidth="149.0" />
+            <Label fx:id="lbl_gender" layoutX="164.0" layoutY="310.0" prefHeight="21.0" prefWidth="149.0" />
+            <Label fx:id="lbl_dob" layoutX="164.0" layoutY="340.0" prefHeight="21.0" prefWidth="149.0" />
+            <Label fx:id="lbl_email_id" layoutX="164.0" layoutY="371.0" prefHeight="21.0" prefWidth="149.0" />
+            <Label fx:id="lbl_mobile_no" layoutX="164.0" layoutY="401.0" prefHeight="21.0" prefWidth="149.0" />
+            <Label fx:id="lbl_blood_group" layoutX="164.0" layoutY="430.0" prefHeight="21.0" prefWidth="149.0" />
+            <Label fx:id="lbl_weight" layoutX="164.0" layoutY="459.0" prefHeight="21.0" prefWidth="149.0" />
+            <Text layoutX="115.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Details">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Line endY="200.0" layoutX="350.0" layoutY="300.0" startY="-60.0" />
+            <Text layoutX="457.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient History">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label layoutX="373.0" layoutY="246.0" text="Last visited date:" />
+            <Label layoutX="373.0" layoutY="279.0" text="Prescription given on previous visit:" />
+            <Label layoutX="374.0" layoutY="401.0" text="Comments given on previous visit:" />
+            <TextArea fx:id="txtarea_pres_given" editable="false" layoutX="374.0" layoutY="301.0" prefHeight="97.0" prefWidth="293.0" />
+            <TextArea fx:id="txtarea_comments_given" editable="false" layoutX="374.0" layoutY="422.0" prefHeight="58.0" prefWidth="293.0" />
+            <Label layoutX="40.0" layoutY="519.0" text="Give new prescription:" />
+            <TextArea fx:id="txtarea_new_pres" layoutX="41.0" layoutY="540.0" prefHeight="67.0" prefWidth="293.0" />
+            <Line endX="330.0" layoutX="333.0" layoutY="508.0" startX="-300.0" />
+            <Label layoutX="381.0" layoutY="519.0" text="Add new comments:" />
+            <TextArea fx:id="txtarea_new_comments" layoutX="371.0" layoutY="540.0" prefHeight="67.0" prefWidth="293.0" />
+            <Label fx:id="lbl_last_visited_date" layoutX="517.0" layoutY="246.0" prefHeight="21.0" prefWidth="149.0" />
+            <Button layoutX="204.0" layoutY="626.0" mnemonicParsing="false" onAction="#addPrescription" text="Add Prescription" />
+            <Label fx:id="lbl_pres_alert" layoutX="133.0" layoutY="657.0" prefHeight="21.0" prefWidth="377.0" textFill="#c62727" />
+            <Label fx:id="lbl_no_history" layoutX="418.0" layoutY="206.0" prefHeight="21.0" prefWidth="202.0" textFill="#e12e2e" />
+            <Label fx:id="lbl_no_appointment" layoutX="418.0" layoutY="166.0" prefHeight="21.0" prefWidth="250.0" textFill="#e12e2e" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="104.0" fitWidth="385.0" layoutX="201.0" layoutY="28.0">
+         <image>
+            <Image url="@clinic_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="137.0" layoutX="38.0" layoutY="16.0">
+         <image>
+            <Image url="@clinic_logo2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
